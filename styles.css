@@ -1,0 +1,21 @@
+body {
+background-color: #1f1d1e;
+margin: 0;
+}
+
+.side-bar {
+  width: 250px;
+  height: 100vh;
+  background-color: #2c2a2b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  color: #f0eada;
+  font-family: "Montserrat";
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 23px;
+}
