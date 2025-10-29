@@ -19,3 +19,20 @@ margin: 0;
   font-weight: 900;
   font-size: 23px;
 }
+
+.nav-links {
+  color: white;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.setting {
+  margin-top: 600px;
+}
+
+.quiz-container {
+  display: none;
+}
