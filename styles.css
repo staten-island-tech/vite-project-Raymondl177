@@ -25,7 +25,9 @@ margin: 0;
   display: flex;
   flex-direction: column;
   font-size: 19px;
-  margin-left: 20px;
+  margin-left: 15px;
+  font-weight: bold;
+  width: 170px;
 }
 
 .setting {
@@ -33,6 +35,7 @@ margin: 0;
   margin: 0;
   padding: 5px;
   border-radius: 5px;
+  padding-left: 15px;
 }
 
 .nav-filter {
@@ -46,8 +49,9 @@ margin: 0;
 .nav-quiz {
   cursor: pointer;
   margin: 0;
-  padding: 5px;
+  padding: 7px;
   border-radius: 5px;
+  padding-left: 15px;
 }
 
 .nav-quiz:hover,
@@ -60,7 +64,6 @@ margin: 0;
   display: none;
   flex-direction: column;
   margin: 0;
-  padding: 10px;
   border-radius: 5px;
   margin-left: 10px;
 }
