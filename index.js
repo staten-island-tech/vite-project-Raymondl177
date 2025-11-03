@@ -83,62 +83,6 @@ const quizzes = [
     filter: "All",
     img: "images/leaning-tower-of-pisa.jpg",
   },
-  {
-    name: "Parthenon",
-    price: 1000000000,
-    continent: "Europe",
-    filter: "All",
-    img: "images/parthenon.jpg",
-  },
-  {
-    name: "Mount Fuji",
-    price: 500000000,
-    continent: "Asia",
-    filter: "All",
-    img: "images/mount-fuji.jpg",
-  },
-  {
-    name: "Burj Khalifa",
-    price: 1500000000,
-    continent: "Asia",
-    filter: "All",
-    img: "images/burj-khalifa.jpg",
-  },
-  {
-    name: "Christ the Redeemer",
-    price: 800000000,
-    continent: "South America",
-    filter: "All",
-    img: "images/christ-the-redeemer.jpg",
-  },
-  {
-    name: "Stonehenge",
-    price: 300000000,
-    continent: "Europe",
-    filter: "All",
-    img: "images/stonehenge.jpg",
-  },
-  {
-    name: "Colossus of Rhodes",
-    price: 2000000000,
-    continent: "Europe",
-    filter: "All",
-    img: "images/colossus-of-rhodes.webp",
-  },
-  {
-    name: "Moai Statues",
-    price: 750000000,
-    continent: "South America",
-    filter: "All",
-    img: "images/moai-statues.jpg",
-  },
-  {
-    name: "Moon",
-    price: 1000000000000,
-    continent: "Space",
-    filter: "All",
-    img: "images/moon.jpg",
-  },
 ];
 
 function inject(quiz) {
@@ -152,12 +96,11 @@ function inject(quiz) {
       <h1 class="card-title"> ${quiz.name}</h1>
       <p class="card-continent">${quiz.category}</p>
       <p class="card-price"> $${quiz.difficulty}</p>
-      <button class="cart-button">Add to Cart</button>
+      <button class="play-button">Play</button>
     </div>`
   );
 }
-
-landmarks.forEach((landmark) => inject(landmark));
+quizzes.forEach((quiz) => inject(quiz));
 
 function dropdownMenu() {
   const quizButton = document.querySelector(".nav-quiz");
