@@ -1,3 +1,5 @@
+import './style.css'
+
 const quizzes = [
   {
     name: "Easy Math Quiz",
