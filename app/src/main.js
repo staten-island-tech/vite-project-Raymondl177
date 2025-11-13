@@ -6,98 +6,98 @@ const quizzes = [
     difficulty: "Easy",
     category: "Math",
     filter: "All",
-    img: "images/white-house.jpg",
+    img: "images/white-house.jpg"
   },
   {
     name: "Medium Math Quiz",
     difficulty: "Medium",
     category: "Math",
     filter: "All",
-    img: "images/eiffel-tower.webp",
+    img: "images/eiffel-tower.webp"
   },
   {
     name: "Hard Math Quiz",
     difficulty: "Hard",
     category: "Math",
     filter: "All",
-    img: "images/great-wall-of-china.webp",
+    img: "images/great-wall-of-china.webp"
   },
   {
     name: "Easy Animal Quiz",
     difficulty: "Easy",
     category: "Animal",
     filter: "All",
-    img: "images/taj-mahal.jpg",
+    img: "images/taj-mahal.jpg"
   },
   {
     name: "Medium Animal Quiz",
     difficulty: "Medium",
     category: "Animal",
     filter: "All",
-    img: "images/statue-of-liberty.jpg",
+    img: "images/statue-of-liberty.jpg"
   },
   {
     name: "Hard Animal Quiz",
     difficulty: "Hard",
     category: "Animal",
     filter: "All",
-    img: "images/colosseum.webp",
+    img: "images/colosseum.webp"
   },
   {
     name: "Easy Science Quiz",
     difficulty: "Easy",
     category: "Science",
     filter: "All",
-    img: "images/machu-picchu.jpg",
+    img: "images/machu-picchu.jpg"
   },
   {
     name: "Medium Science Quiz",
     difficulty: "Medium",
     category: "Science",
     filter: "All",
-    img: "images/sydney-opera-house.jpg",
+    img: "images/sydney-opera-house.jpg"
   },
   {
     name: "Hard Science Quiz",
     difficulty: "Hard",
     category: "Science",
     filter: "All",
-    img: "images/big-ben.jpg",
+    img: "images/big-ben.jpg"
   },
   {
     name: "Easy Geography Quiz",
     difficulty: "Easy",
     category: "Geography",
     filter: "All",
-    img: "images/pyramids-of-giza.jpg",
+    img: "images/pyramids-of-giza.jpg"
   },
   {
     name: "Medium Geography Quiz",
     difficulty: "Medium",
     category: "Geography",
     filter: "All",
-    img: "images/washington-monument.jpg",
+    img: "images/washington-monument.jpg"
   },
   {
     name: "Hard Geography Quiz",
     difficulty: "Hard",
     category: "Geography",
     filter: "All",
-    img: "images/leaning-tower-of-pisa.jpg",
-  },
+    img: "images/leaning-tower-of-pisa.jpg"
+  }
 ];
 
 function inject(quiz) {
   //query the container
   //using adjacent html push card into container
-  const container = document.querySelector(".container");
-  container.insertAdjacentHTML(
+  const cardContainer = document.querySelector(".card-container");
+  cardContainer.insertAdjacentHTML(
     "afterbegin",
     `<div class="card">
       <img class="card-image" src=${quiz.img} alt=${quiz.name}/>
       <h1 class="card-title"> ${quiz.name}</h1>
-      <p class="card-continent">${quiz.category}</p>
-      <p class="card-price"> $${quiz.difficulty}</p>
+      <p class="card-category"> ${quiz.category}</p>
+      <p class="card-difficulty"> ${quiz.difficulty}</p>
       <button class="play-button">Play</button>
     </div>`
   );
