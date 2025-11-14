@@ -71,8 +71,8 @@ margin: 0;
  .card {
    background-color: #2c2a2b;
    width: 22%;
-   height: 550px;
-   margin: 50px 0;
+   height: 400px;
+   margin: 40px 0;
    border-radius: 10px;
    box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15);
    display: flex;
@@ -85,16 +85,43 @@ margin: 0;
    background-color: #1f1d1e;
    margin: 30px auto;
    justify-content: space-between;
-   width: 70vw;
+   width: 80vw;
  }
 
- .card-image{
-  width: 70%;
+ .container {
+  display: flex;
+  flex-direction: row;
  }
 
+.card-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-title,
+.card-category,
+.card-difficulty {
+  margin: 0;
+}
  .card-title {
-  font-size: 20px;
+  font-size: 25px;
   color: white;
+  margin-left: 10px;
+  margin: 10px;
+ }
+
+ .card-category {
+  font-size: 20px;
+  margin-left: 10px;
+  color: white;
+  margin: 10px;
+ }
+
+  .card-difficulty {
+  font-size: 20px;
+  margin-left: 10px;
+  color: white;
+  margin: 10px;
  }
 
  

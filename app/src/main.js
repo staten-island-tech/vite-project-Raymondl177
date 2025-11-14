@@ -6,84 +6,84 @@ const quizzes = [
     difficulty: "Easy",
     category: "Math",
     filter: "All",
-    img: "images/white-house.jpg"
+    img: "images/easy-math.webp"
   },
   {
     name: "Medium Math Quiz",
     difficulty: "Medium",
     category: "Math",
     filter: "All",
-    img: "images/eiffel-tower.webp"
+    img: "images/medium-math.webp"
   },
   {
     name: "Hard Math Quiz",
     difficulty: "Hard",
     category: "Math",
     filter: "All",
-    img: "images/great-wall-of-china.webp"
+    img: "images/hard-math.webp"
   },
   {
     name: "Easy Animal Quiz",
     difficulty: "Easy",
     category: "Animal",
     filter: "All",
-    img: "images/taj-mahal.jpg"
+    img: "images/easy-animal.webp"
   },
   {
     name: "Medium Animal Quiz",
     difficulty: "Medium",
     category: "Animal",
     filter: "All",
-    img: "images/statue-of-liberty.jpg"
+    img: "images/medium-animal.webp"
   },
   {
     name: "Hard Animal Quiz",
     difficulty: "Hard",
     category: "Animal",
     filter: "All",
-    img: "images/colosseum.webp"
+    img: "images/hard-animal.webp"
   },
   {
     name: "Easy Science Quiz",
     difficulty: "Easy",
     category: "Science",
     filter: "All",
-    img: "images/machu-picchu.jpg"
+    img: "images/easy-science.webp"
   },
   {
     name: "Medium Science Quiz",
     difficulty: "Medium",
     category: "Science",
     filter: "All",
-    img: "images/sydney-opera-house.jpg"
+    img: "images/medium-science.webp"
   },
   {
     name: "Hard Science Quiz",
     difficulty: "Hard",
     category: "Science",
     filter: "All",
-    img: "images/big-ben.jpg"
+    img: "images/hard-science.jpg"
   },
   {
     name: "Easy Geography Quiz",
     difficulty: "Easy",
     category: "Geography",
     filter: "All",
-    img: "images/pyramids-of-giza.jpg"
+    img: "images/easy-geography.webp"
   },
   {
     name: "Medium Geography Quiz",
     difficulty: "Medium",
     category: "Geography",
     filter: "All",
-    img: "images/washington-monument.jpg"
+    img: "images/medium-geography.webp"
   },
   {
     name: "Hard Geography Quiz",
     difficulty: "Hard",
     category: "Geography",
     filter: "All",
-    img: "images/leaning-tower-of-pisa.jpg"
+    img: "images/hard-geography.webp"
   }
 ];
 
