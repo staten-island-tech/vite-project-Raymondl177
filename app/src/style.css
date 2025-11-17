@@ -9,6 +9,7 @@ margin: 0;
   background-color: #2c2a2b;
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
 
 .logo {
@@ -36,6 +37,10 @@ margin: 0;
   padding: 7px;
   border-radius: 5px;
   padding-left: 15px;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 20px;
+  width: 178px;
 }
 
 .nav-filter {
@@ -71,7 +76,7 @@ margin: 0;
  .card {
    background-color: #2c2a2b;
    width: 22%;
-   height: 400px;
+   height: 410px;
    margin: 40px 0;
    border-radius: 10px;
    box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15);
@@ -84,6 +89,7 @@ margin: 0;
    flex-wrap: wrap;
    background-color: #1f1d1e;
    margin: 30px auto;
+   padding-left: 250px;
    justify-content: space-between;
    width: 80vw;
  }
@@ -96,6 +102,7 @@ margin: 0;
 .card-image {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  height: 20vh;
 }
 
 .card-title,
@@ -111,17 +118,30 @@ margin: 0;
  }
 
  .card-category {
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 10px;
   color: white;
-  margin: 10px;
  }
 
   .card-difficulty {
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 10px;
   color: white;
-  margin: 10px;
+  margin-top: 10px;
+ }
+
+ .play-button {
+  width: 100px;
+  padding: 15px;
+  margin-left: 115px;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: #1f1d1e;
+  border-radius: 10px;
+  color: white;
+  border-color: black;
+  cursor: pointer;
+  margin-top: 30px;
  }
 
  
