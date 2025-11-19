@@ -113,3 +113,23 @@ function dropdownMenu() {
 }
 
 dropdownMenu();
+
+function filterQuiz() {
+  const filterButtons = document.querySelectorAll(".nav-filter");
+  const container = document.querySelector(".card-container");
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const selectedDifficulty = button.textContent.trim();
+      const selectedCategory = button.textContent.trim();
+      container.innerHTML = "";
+      const filteredQuiz = quizzes.filter(
+        (quiz) =>
+          quiz.difficulty === selectedDifficulty ||
+          quiz.filter === selectedDifficulty ||
+          quiz.category === selectedCategory
+      );
+      filteredQuiz.forEach((quiz) => inject(quiz));
+    })
+  })
+}
+filterQuiz();
