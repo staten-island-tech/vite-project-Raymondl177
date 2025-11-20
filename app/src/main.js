@@ -87,6 +87,34 @@ const quizzes = [
   }
 ];
 
+function toggleMode() {
+  const toggleButton = document.querySelector(".setting")
+  const body = document.body
+  const sideBar = document.querySelector(".side-bar")
+  const cardContainer = document.querySelector(".card-container")
+  body.classList.add("dark-mode")
+  sideBar.classList.add("dark-mode2")
+  cardContainer.classList.add("dark-mode2")
+  toggleButton.addEventListener("click", () => {
+    if(body.classList.contains("dark-mode")){
+      body.classList.replace("dark-mode", "light-mode")
+    } else {
+      body.classList.replace("light-mode", "dark-mode")
+    }
+    if(sideBar.classList.contains("dark-mode2")){
+      sideBar.classList.replace("dark-mode2", "light-mode")
+    } else {
+      sideBar.classList.replace("light-mode", "dark-mode2")
+    }
+    if(cardContainer.classList.contains("dark-mode2")){
+      cardContainer.classList.replace("dark-mode2", "light-mode")
+    } else {
+      cardContainer.classList.replace("light-mode", "dark-mode2")
+    }
+  })
+}
+toggleMode();
+
 function inject(quiz) {
   //query the container
   //using adjacent html push card into container
