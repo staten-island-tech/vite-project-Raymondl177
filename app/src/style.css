@@ -1,34 +1,40 @@
-body {
-background-color: #1f1d1e;
-margin: 0;
+body{
+  background-color: var(--dark-gray);;
+  margin: 0;
 }
 
-body.light-mode {
-  background-color: white;
-  color: black;
+:root {
+  --dark-gray: #1f1d1e;
+  --light-gray: #2c2a2b;
+  --white: white;
 }
 
-body.dark-mode {
-  background-color: #1f1d1e;
-  color: white;
+.dark2 {
+  --primary: var(--light-gray);
+  --secondary: var(--white);
+}
+.dark {
+  --primary: var(--dark-gray);
+  --secondary: var(--white);
 }
 
-body.dark-mode2 {
-  background-color: #2c2a2b;
-  color: white;
+.light {
+  --primary: var(--white);
+  --secondary: var(--dark-gray);
 }
 
 .side-bar {
+  background-color: var(--light-gray);;
+  color: var(--white);
   width: 250px;
   height: 100vh;
-  background-color: #2c2a2b;
   display: flex;
   flex-direction: column;
   position: fixed;
 }
 
 .logo {
-  color: white;
+  color: var(--white);
   font-family: "Montserrat";
   font-optical-sizing: auto;
   font-weight: 900;
@@ -37,7 +43,7 @@ body.dark-mode2 {
 }
 
 .nav-links {
-  color: white;
+  color: var(--white);
   display: flex;
   flex-direction: column;
   font-size: 19px;
@@ -74,6 +80,16 @@ body.dark-mode2 {
   padding-left: 15px;
 }
 
+.card-container {
+   display: flex;
+   flex-wrap: wrap;
+   background-color: var(--dark-gray);;
+   margin: 30px auto;
+   padding-left: 250px;
+   justify-content: space-between;
+   width: 80vw;
+ }
+
 .nav-quiz:hover,
 .setting:hover,
 .nav-filter:hover {
@@ -89,7 +105,7 @@ body.dark-mode2 {
 }
 
  .card {
-   background-color: #2c2a2b;
+   background-color: var(--light-gray);;
    width: 22%;
    height: 410px;
    margin: 40px 0;
@@ -97,16 +113,6 @@ body.dark-mode2 {
    box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15);
    display: flex;
    flex-direction: column;
- }
-
-  .card-container {
-   display: flex;
-   flex-wrap: wrap;
-   background-color: #1f1d1e;
-   margin: 30px auto;
-   padding-left: 250px;
-   justify-content: space-between;
-   width: 80vw;
  }
 
  .container {
@@ -127,7 +133,7 @@ body.dark-mode2 {
 }
  .card-title {
   font-size: 25px;
-  color: white;
+  color: var(--white);
   margin-left: 10px;
   margin: 10px;
  }
@@ -135,13 +141,13 @@ body.dark-mode2 {
  .card-category {
   font-size: 18px;
   margin-left: 10px;
-  color: white;
+  color: var(--white);
  }
 
   .card-difficulty {
   font-size: 18px;
   margin-left: 10px;
-  color: white;
+  color: var(--white);
   margin-top: 10px;
  }
 
@@ -153,7 +159,7 @@ body.dark-mode2 {
   font-weight: 900;
   background-color: #1f1d1e;
   border-radius: 10px;
-  color: white;
+  color: var(--white);
   border-color: black;
   cursor: pointer;
   margin-top: 30px;
