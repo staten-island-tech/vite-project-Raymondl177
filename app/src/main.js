@@ -92,36 +92,40 @@ function toggleMode() {
   const body = document.body
   const sideBar = document.querySelector(".side-bar")
   const cardContainer = document.querySelector(".card-container")
+  const card = document.querySelector(".card")
   toggleButton.addEventListener("click", () => {
     if(body.classList.contains("dark")){
       body.classList.add("light")
       body.classList.remove("dark")
     } else {
       body.classList.add("dark")
+      body.classList.remove("light")
     }
-    if(sideBar.classList.contains("dark-mode")){
-      sideBar.classList.replace("dark-mode", "light-mode")
+   if(sideBar.classList.contains("dark2")){
+      sideBar.classList.add("light")
+      sideBar.classList.remove("dark2")
     } else {
-      sideBar.classList.replace("light-mode", "dark-mode")
+      sideBar.classList.add("dark2")
+      sideBar.classList.remove("light")
     }
-    if(cardContainer.classList.contains("dark-mode")){
-      cardContainer.classList.replace("dark-mode", "light-mode")
+    if(cardContainer.classList.contains("dark2")){
+      cardContainer.classList.add("light")
+      cardContainer.classList.remove("dark2")
     } else {
-      cardContainer.classList.replace("light-mode", "dark-mode")
+      cardContainer.classList.add("dark2")
+      cardContainer.classList.remove("light")
+    }
+     if(card.classList.contains("dark2")){
+      card.classList.add("light")
+      card.classList.remove("dark2")
+    } else {
+      card.classList.add("dark2")
+      card.classList.remove("light")
     }
   })
 }
 toggleMode();
 
-document.querySelector(".btn").addEventListener("click", function () {
-  if (document.body.classList.contains("cool")) {
-    document.body.classList.add("warm");
-    document.body.classList.remove("cool");
-  } else {
-    document.body.classList.add("cool");
-    document.body.classList.remove("warm");
-  }
-});
 function inject(quiz) {
   //query the container
   //using adjacent html push card into container
