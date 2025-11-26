@@ -92,7 +92,7 @@ function toggleMode() {
   const body = document.body
   const sideBar = document.querySelector(".side-bar")
   const cardContainer = document.querySelector(".card-container")
-  const card = document.querySelector(".card")
+  const html = document.innerHTML
   toggleButton.addEventListener("click", () => {
     if(body.classList.contains("dark")){
       body.classList.add("light")
@@ -102,25 +102,25 @@ function toggleMode() {
       body.classList.remove("light")
     }
    if(sideBar.classList.contains("dark2")){
-      sideBar.classList.add("light")
+      sideBar.classList.add("light2")
       sideBar.classList.remove("dark2")
     } else {
       sideBar.classList.add("dark2")
-      sideBar.classList.remove("light")
+      sideBar.classList.remove("light2")
     }
     if(cardContainer.classList.contains("dark2")){
-      cardContainer.classList.add("light")
+      cardContainer.classList.add("light2")
       cardContainer.classList.remove("dark2")
     } else {
       cardContainer.classList.add("dark2")
-      cardContainer.classList.remove("light")
+      cardContainer.classList.remove("light2")
     }
-     if(card.classList.contains("dark2")){
-      card.classList.add("light")
-      card.classList.remove("dark2")
+    if(html.classList.contains("default")){
+      html.classList.add("light")
+      html.classList.remove("default")
     } else {
-      card.classList.add("dark2")
-      card.classList.remove("light")
+      html.classList.add("default")
+      html.classList.remove("light")
     }
   })
 }
