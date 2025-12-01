@@ -5,10 +5,6 @@
   --gray: #e4e3dd;
 }
 
-.default {
-  --default: var(--dark-gray);
-  --default2: var(--light-gray);
-}
 .dark2 {
   --primary2: var(--light-gray);
   --secondary2: var(--white);
@@ -28,9 +24,6 @@
   --secondary2: var(--light-gray);
 }
 
-html {
-  background-color: var(--default);
-}
 body{
   background-color: var(--primary);
   margin: 0;
@@ -77,6 +70,17 @@ body{
   width: 178px;
 }
 
+.nav-setting {
+  cursor: pointer;
+  margin: 0;
+  padding: 7px;
+  padding-left: 15px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+
 .nav-filter {
   cursor: pointer;
   margin: 0;
@@ -105,12 +109,21 @@ body{
 
 .nav-quiz:hover,
 .setting:hover,
-.nav-filter:hover {
+.nav-filter:hover,
+.nav-setting:hover {
   background-color: var(--primary);
 }
 
 
 .quiz-container {
+  display: none;
+  flex-direction: column;
+  margin: 0;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.setting-container {
   display: none;
   flex-direction: column;
   margin: 0;

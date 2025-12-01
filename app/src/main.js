@@ -146,9 +146,14 @@ quizzes.forEach((quiz) => inject(quiz));
 function dropdownMenu() {
   const quizButton = document.querySelector(".nav-quiz");
   const navFilters = document.querySelector(".quiz-container");
+  const settingButton = document.querySelector(".setting");
+  const navSettings = document.querySelector(".setting-container");
   quizButton.addEventListener("click", () => {
   navFilters.style.display = navFilters.style.display === "flex" ? "none" : "flex";
   });
+   settingButton.addEventListener("click", () => {
+   navSettings.style.display = navSettings.style.display === "flex" ? "none" : "flex";
+});
 }
 
 dropdownMenu();
