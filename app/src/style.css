@@ -78,7 +78,8 @@ body{
   border-radius: 5px;
   position: fixed;
   bottom: 0;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
+  width: 168px;
 }
 
 .nav-filter {
@@ -100,7 +101,7 @@ body{
 .card-container {
    display: flex;
    flex-wrap: wrap;
-   background-color: var(--default);
+   background-color: var(--primary);
    margin: 30px auto;
    padding-left: 250px;
    justify-content: space-between;
@@ -115,7 +116,7 @@ body{
 }
 
 
-.quiz-container {
+.filter-container {
   display: none;
   flex-direction: column;
   margin: 0;
@@ -192,4 +193,14 @@ body{
   margin-top: 30px;
  }
 
+ .quiz-container {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   background-color: var(--primary);
+   margin: 30px auto;
+   padding-left: 250px;
+   justify-content: space-between;
+   width: 80vw;
+ }
  

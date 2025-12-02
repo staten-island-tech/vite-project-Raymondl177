@@ -87,8 +87,25 @@ const quizzes = [
   }
 ];
 
+function inject(quiz) {
+  //query the container
+  //using adjacent html push card into container
+  const cardContainer = document.querySelector(".card-container");
+  cardContainer.insertAdjacentHTML(
+    "afterbegin",
+    `<div class="card">
+      <img class="card-image" src=${quiz.img} alt=${quiz.name}/>
+      <h1 class="card-title"> ${quiz.name}</h1>
+      <p class="card-category"> ${quiz.category}</p>
+      <p class="card-difficulty"> ${quiz.difficulty}</p>
+      <button class="play-button">Play</button>
+    </div>`
+  );
+}
+quizzes.forEach((quiz) => inject(quiz));
+
 function toggleMode() {
-  const toggleButton = document.querySelector(".setting")
+  const toggleButton = document.getElementById("toggleMode")
   const body = document.body
   const sideBar = document.querySelector(".side-bar")
   const cardContainer = document.querySelector(".card-container")
@@ -126,26 +143,9 @@ function toggleMode() {
 }
 toggleMode();
 
-function inject(quiz) {
-  //query the container
-  //using adjacent html push card into container
-  const cardContainer = document.querySelector(".card-container");
-  cardContainer.insertAdjacentHTML(
-    "afterbegin",
-    `<div class="card">
-      <img class="card-image" src=${quiz.img} alt=${quiz.name}/>
-      <h1 class="card-title"> ${quiz.name}</h1>
-      <p class="card-category"> ${quiz.category}</p>
-      <p class="card-difficulty"> ${quiz.difficulty}</p>
-      <button class="play-button">Play</button>
-    </div>`
-  );
-}
-quizzes.forEach((quiz) => inject(quiz));
-
 function dropdownMenu() {
   const quizButton = document.querySelector(".nav-quiz");
-  const navFilters = document.querySelector(".quiz-container");
+  const navFilters = document.querySelector(".filter-container");
   const settingButton = document.querySelector(".setting");
   const navSettings = document.querySelector(".setting-container");
   quizButton.addEventListener("click", () => {
