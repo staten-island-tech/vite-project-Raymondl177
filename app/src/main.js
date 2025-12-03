@@ -110,34 +110,35 @@ function toggleMode() {
   const sideBar = document.querySelector(".side-bar")
   const cardContainer = document.querySelector(".card-container")
   const html = document.innerHTML
+  const quizContainer = document.querySelector(".quiz-container")
   toggleButton.addEventListener("click", () => {
-    if(body.classList.contains("dark")){
-      body.classList.add("light")
-      body.classList.remove("dark")
-    } else {
+    if(body.classList.contains("light")){
       body.classList.add("dark")
       body.classList.remove("light")
-    }
-   if(sideBar.classList.contains("dark2")){
-      sideBar.classList.add("light2")
-      sideBar.classList.remove("dark2")
     } else {
+      body.classList.add("light")
+      body.classList.remove("dark")
+    }
+   if(sideBar.classList.contains("light2")){
       sideBar.classList.add("dark2")
       sideBar.classList.remove("light2")
-    }
-    if(cardContainer.classList.contains("dark2")){
-      cardContainer.classList.add("light2")
-      cardContainer.classList.remove("dark2")
     } else {
+      sideBar.classList.add("light2")
+      sideBar.classList.remove("dark2")
+    }
+    if(cardContainer.classList.contains("light2")){
       cardContainer.classList.add("dark2")
       cardContainer.classList.remove("light2")
-    }
-    if(html.classList.contains("default")){
-      html.classList.add("light")
-      html.classList.remove("default")
     } else {
-      html.classList.add("default")
-      html.classList.remove("light")
+      cardContainer.classList.add("light2")
+      cardContainer.classList.remove("dark2")
+    }
+    if(quizContainer.classList.contains("light2")){
+      quizContainer.classList.add("dark2")
+      quizContainer.classList.remove("light2")
+    } else {
+      quizContainer.classList.add("light2")
+      quizContainer.classList.remove("dark2")
     }
   })
 }

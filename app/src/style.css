@@ -24,6 +24,9 @@
   --secondary2: var(--light-gray);
 }
 
+html {
+  margin: 0;
+}
 body{
   background-color: var(--primary);
   margin: 0;
@@ -99,7 +102,7 @@ body{
 }
 
 .card-container {
-   display: flex;
+   display: none;
    flex-wrap: wrap;
    background-color: var(--primary);
    margin: 30px auto;
@@ -145,7 +148,8 @@ body{
 
  .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin: 0px;
  }
 
 .card-image {
@@ -194,13 +198,32 @@ body{
  }
 
  .quiz-container {
+   margin: 0px;
    display: flex;
    flex-wrap: wrap;
-   flex-direction: row;
    background-color: var(--primary);
    margin: 30px auto;
    padding-left: 250px;
-   justify-content: space-between;
    width: 80vw;
  }
- 
+
+ .quiz-title {
+  color: var(--secondary2);
+  margin: 0px;
+  margin: auto;
+ }
+
+ .go-back {
+  color: var(--secondary2);
+  display: inline-block;
+  margin: 0px;
+  font-size: 30px;
+  vertical-align: top;
+ }
+
+ .main-menu {
+  color: var(--secondary2);
+  display: inline-block;
+  margin: 0px;
+  font-size: 25px;
+ }
