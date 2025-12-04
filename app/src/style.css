@@ -102,7 +102,7 @@ body{
 }
 
 .card-container {
-   display: none;
+   display: flex;
    flex-wrap: wrap;
    background-color: var(--primary);
    margin: 30px auto;
@@ -199,7 +199,7 @@ body{
 
  .quiz-container {
    margin: 0px;
-   display: flex;
+   display: none;
    flex-wrap: wrap;
    background-color: var(--primary);
    margin: 30px auto;
@@ -213,7 +213,10 @@ body{
   margin: auto;
  }
 
- .go-back {
+ .goBack {
+  cursor: pointer;
+ }
+ .arrow {
   color: var(--secondary2);
   display: inline-block;
   margin: 0px;

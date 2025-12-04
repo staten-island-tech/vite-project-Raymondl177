@@ -109,7 +109,6 @@ function toggleMode() {
   const body = document.body
   const sideBar = document.querySelector(".side-bar")
   const cardContainer = document.querySelector(".card-container")
-  const html = document.innerHTML
   const quizContainer = document.querySelector(".quiz-container")
   toggleButton.addEventListener("click", () => {
     if(body.classList.contains("light")){
@@ -178,3 +177,37 @@ function filterQuiz() {
   })
 }
 filterQuiz();
+
+function loadQuestions () {
+  const playButtons = document.querySelectorAll(".play-button");
+  const cardContainer = document.querySelector(".card-container");
+  const quizContainer = document.querySelector(".quiz-container");
+  playButtons.forEach((button) => {
+    button.addEventListener("click", function (){
+        const quizTitle = document.querySelector(".quiz-title")
+        cardContainer.innerHTML = "";
+        quizContainer.style.display = "flex";
+        quizTitle.textContent = quizTitle.textContent.replace("Quiz", "Hard Geography Quiz");
+        })
+    })
+  }
+loadQuestions();
+
+function goToMainMenu () {
+  const goBack = document.querySelector(".go-back")
+  const cardContainer = document.querySelector(".card-container");
+  const quizContainer = document.querySelector(".quiz-container");
+  goBack.addEventListener("click", function (){
+    quizContainer.innerHTML = "";
+    cardContainer.style.display = "flex";
+  })
+}
+goToMainMenu();
+
+/* const cardTitle = document.querySelectorAll(".card-title");
+      const selectedQuiz = cardTitle.textContent.trim();
+      const cardName = quizzes.name
+        if(cardName === selectedQuiz) {
+        cardContainer.innerHTML = "";
+        }
+      } */
