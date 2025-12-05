@@ -173,6 +173,7 @@ function filterQuiz() {
           quiz.category === selectedCategory
       );
       filteredQuiz.forEach((quiz) => inject(quiz));
+      loadQuestions();
     })
   })
 }
@@ -180,14 +181,15 @@ filterQuiz();
 
 function loadQuestions () {
   const playButtons = document.querySelectorAll(".play-button");
-  const cardContainer = document.querySelector(".card-container");
   const quizContainer = document.querySelector(".quiz-container");
+  const container = document.querySelector(".card-container");
   playButtons.forEach((button) => {
     button.addEventListener("click", function (){
         const quizTitle = document.querySelector(".quiz-title")
-        cardContainer.innerHTML = "";
-        quizContainer.style.display = "flex";
-        quizTitle.textContent = quizTitle.textContent.replace("Quiz", "Hard Geography Quiz");
+        const cardTitle = document.querySelector(".card-title")
+        container.innerHTML = "";
+        quizContainer.style.display = "inline-block";
+        quizTitle.replaceWith(`${cardTitle.textContent}`)
         })
     })
   }
@@ -195,11 +197,11 @@ loadQuestions();
 
 function goToMainMenu () {
   const goBack = document.querySelector(".go-back")
-  const cardContainer = document.querySelector(".card-container");
   const quizContainer = document.querySelector(".quiz-container");
+  const container = document.querySelector(".card-container");
   goBack.addEventListener("click", function (){
     quizContainer.innerHTML = "";
-    cardContainer.style.display = "flex";
+    container.style.display = "flex";
   })
 }
 goToMainMenu();

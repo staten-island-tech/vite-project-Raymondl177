@@ -210,7 +210,6 @@ body{
  .quiz-title {
   color: var(--secondary2);
   margin: 0px;
-  margin: auto;
  }
 
  .goBack {
@@ -229,4 +228,8 @@ body{
   display: inline-block;
   margin: 0px;
   font-size: 25px;
+ }
+
+ p {
+  display: flex;
  }
