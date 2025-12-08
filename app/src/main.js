@@ -185,11 +185,14 @@ function loadQuestions () {
   const container = document.querySelector(".card-container");
   playButtons.forEach((button) => {
     button.addEventListener("click", function (){
-        const quizTitle = document.querySelector(".quiz-title")
-        const cardTitle = document.querySelector(".card-title")
         container.innerHTML = "";
-        quizContainer.style.display = "inline-block";
-        quizTitle.replaceWith(`${cardTitle.textContent}`)
+        quizContainer.style.display = "flex";
+        quizContainer.insertAdjacentHTML(
+          "beforeend",
+          `<div class="question-container">
+            <h3 class="question-title">Where is </h3>
+          </div>`
+        )
         })
     })
   }

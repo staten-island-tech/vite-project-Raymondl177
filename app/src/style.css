@@ -200,16 +200,10 @@ body{
  .quiz-container {
    margin: 0px;
    display: none;
-   flex-wrap: wrap;
+   flex-direction: column;
    background-color: var(--primary);
-   margin: 30px auto;
    padding-left: 250px;
    width: 80vw;
- }
-
- .quiz-title {
-  color: var(--secondary2);
-  margin: 0px;
  }
 
  .goBack {
@@ -230,6 +224,11 @@ body{
   font-size: 25px;
  }
 
- p {
-  display: flex;
+ .hard-geography {
+  font: 25px;
+ }
+
+ .question-title {
+  display: block;
+  text-align: center;
  }
