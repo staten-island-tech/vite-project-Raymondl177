@@ -9,6 +9,7 @@
   --primary2: var(--light-gray);
   --secondary2: var(--white);
 }
+
 .dark {
   --primary: var(--dark-gray);
   --secondary: var(--gray);
@@ -27,7 +28,8 @@
 html {
   margin: 0;
 }
-body{
+
+body {
   background-color: var(--primary);
   margin: 0;
 }
@@ -102,14 +104,14 @@ body{
 }
 
 .card-container {
-   display: flex;
-   flex-wrap: wrap;
-   background-color: var(--primary);
-   margin: 30px auto;
-   padding-left: 250px;
-   justify-content: space-between;
-   width: 80vw;
- }
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--primary);
+  margin: 30px auto;
+  padding-left: 250px;
+  justify-content: space-between;
+  width: 80vw;
+}
 
 .nav-quiz:hover,
 .setting:hover,
@@ -135,22 +137,22 @@ body{
   margin-left: 10px;
 }
 
- .card {
-   background-color: var(--primary2);
-   width: 22%;
-   height: 410px;
-   margin: 40px 0;
-   border-radius: 10px;
-   box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15);
-   display: flex;
-   flex-direction: column;
- }
+.card {
+  background-color: var(--primary2);
+  width: 22%;
+  height: 410px;
+  margin: 40px 0;
+  border-radius: 10px;
+  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
 
- .container {
+.container {
   display: flex;
   flex-direction: column;
   margin: 0px;
- }
+}
 
 .card-image {
   border-top-left-radius: 10px;
@@ -163,27 +165,28 @@ body{
 .card-difficulty {
   margin: 0;
 }
- .card-title {
+
+.card-title {
   font-size: 25px;
   color: var(--secondary2);
   margin-left: 10px;
   margin: 10px;
- }
+}
 
- .card-category {
+.card-category {
   font-size: 18px;
   margin-left: 10px;
   color: var(--secondary2);
- }
+}
 
-  .card-difficulty {
+.card-difficulty {
   font-size: 18px;
   margin-left: 10px;
   color: var(--secondary2);
   margin-top: 10px;
- }
+}
 
- .play-button {
+.play-button {
   width: 100px;
   padding: 15px;
   margin-left: 115px;
@@ -192,10 +195,11 @@ body{
   background-color: var(--primary);
   border-radius: 10px;
   color: var(--secondary);
-  border-color: var(--primary);;
+  border-color: var(--primary);
+  ;
   cursor: pointer;
   margin-top: 30px;
- }
+}
 
 .quiz-container {
   display: none;
@@ -221,49 +225,49 @@ body{
   gap: 5px;
 }
 
- .arrow {
+.arrow {
   color: var(--secondary2);
   display: inline-block;
   margin: 0 10px 0 0;
   font-size: 30px;
- }
+}
 
- .main-menu {
+.main-menu {
   color: var(--secondary2);
   font-size: 25px;
   font-weight: 700;
- }
-
- .question-title {
-  display: block;
-  text-align: center;
- }
-
- .question-container {
-width: 100%;
-margin-top: 40px;
-padding: 20px;
 }
 
 .question-title {
-font-family: Montserrat;
-font-weight: 700;
-font-size: 24px;
-color: var(--secondary2);
-background-color: var(--primary);
-padding: 18px;
-border-radius: 10px;
-margin: 20px auto;
-width: 80%;
-box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.15);
+  display: block;
+  text-align: center;
+}
+
+.question-container {
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.question-title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--secondary2);
+  background-color: var(--primary);
+  padding: 18px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .quiz-content {
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 80%;
-padding-left: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding-left: 250px;
 }
 
 .question-block {
@@ -304,9 +308,19 @@ padding-left: 250px;
   color: var(--primary);
 }
 
-.answer.selected { border: 2px solid #f1c40f; }
-.answer.correct { background-color: #2ecc71; color: white; }
-.answer.wrong { background-color: #e74c3c; color: white; }
+.answer.selected {
+  border: 2px solid #f1c40f;
+}
+
+.answer.correct {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.answer.wrong {
+  background-color: #e74c3c;
+  color: white;
+}
 
 .explanation {
   display: none;
@@ -319,7 +333,7 @@ padding-left: 250px;
 }
 
 .submit-quiz {
- width: 150px;
+  width: 150px;
   padding: 12px;
   font-size: 18px;
   font-weight: bold;
