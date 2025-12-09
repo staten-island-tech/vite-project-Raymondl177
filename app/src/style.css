@@ -285,11 +285,11 @@ padding-left: 250px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: center;
+  margin-left: 70px;
 }
 
 .answer {
-  width: 200px;
+  width: 600px;
   padding: 10px;
   font-size: 18px;
   background-color: var(--primary);
@@ -310,8 +310,9 @@ padding-left: 250px;
 
 .explanation {
   display: none;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 17px;
   background-color: var(--primary);
   color: var(--secondary);
   border-radius: 8px;
